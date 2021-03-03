@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Maru's Portfolio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|EB+Garamond|Josefin+Slab:400,400i,600i,700,700i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header class="row d-flex justify-content-center mb-5">
+          <nav class="col-12 col-sm-9 mx-xl-5">
+            <div class="dropdown d-xl-none">
+                <button class="dropdown-toggle text-center py-2 px-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Menu
+				</button>
+				<div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item py-3 px-3" href="#">HOME</a>
+				  <a class="dropdown-item py-3 px-3" href="#About">ABOUT</a>
+				  <a class="dropdown-item py-3 px-3" href="#Portfolio">PORTFOLIO</a>
+				  <a class="dropdown-item py-3 px-3" href="#Contact">CONTACT</a>
+				</div>
+			</div>	  
+            <ul class="d-none d-xl-flex justify-content-start mx-xl-5">
+                <li class="ml-xl-5">
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#About">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#Contact">CONTACT</a>
+                </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="row d-flex justify-content-center">
+            <section id="Home" class="col-12 col-md-10 col-xl-9">
+                <img id="photo" class="rounded-circle mt-5 col-10 col-sm-7 col-lg-5 col-xl-4" src="img/professional_photo1.png" alt="my picture">
+                <h1 class="col-12 shadow text-center">HELLO I'M MARU</h1>
+                <h1 class="col-12 shadow text-center">I LOVE CREATING SOLUTIONS</h1>
+            </section>
+            <section id="About" class="col-12 col-lg-10 col-xl-9">
+                <div class="b-separator row mx-5"></div>
+                <h2 class="text-center font-weight-bold">ABOUT</h2>
+                <a target="_blank" href="https://docs.google.com/document/d/1iXtKV8fcaGdVDujiSTQoFPLfCuruSuE5jps4CTqanLg/edit?usp=sharing">Go through my CV</a>
+                <div class="row my-5 mx-4">
+                    <article class="col-12 col-xl-4">
+                        <h3 class="text-center">ABOUT ME</h3>
+                        <div class="o-separator"></div>
+                        <p class="text-center">I'm a science and systems engineer with a passion for bugs. I believe that debugging is the best way to learn a new technology: not only do you have to figure out how to fix them, but you also really teach yourself why or why not a process works, eventually coming up with a solution you'll never forget.</p>
+                    </article>
+                    <article class="col-12 col-xl-4">
+                        <h3 class="text-center">WHAT I'VE DONE</h3>
+                        <div class="o-separator"></div>
+                        <p class="text-center">I have over 6 years of experience working as an analyst, developer, and programmer on a range of projects, from leading a team in building a web ERP for a non-profit to programming scheduled tasks and building automated reports in order to prevent revenue loss for a telecommunications company.</p>
+                    </article>
+                    <article class="col-12 col-xl-4">
+                        <h3 class="text-center">WHAT I DO</h3>
+                        <div class="o-separator"></div>
+                        <p class="text-center">Currently, I'm enrolled in a full-stack development program called Microverse where I've learned remote-first best practices and improved my programming skills as an HTML & CSS, Ruby on Rails, JS and React and Redux full-stack developer. I also volunteer as a mentor to junior developers also enrolled in the aforementioned program and work part-time as a Technical Support Engineer where I review Ruby projects.</p>
+                    </article>
+                    <article class="col-12 col-xl-4 d-none d-xl-block">
+                        <div class="o-separator"></div>
+                    </article>
+                    <article class="col-12 col-xl-4 d-none d-xl-block">
+                        <div class="o-separator"></div>
+                    </article>
+                    <article class="col-12 col-xl-4 d-none d-xl-block">
+                        <div class="o-separator"></div>
+                    </article>
+                </div>
+            </section>
+            <section id="Portfolio" class="col-12 col-md-10 col-xl-9">
+                <div class="b-separator row mx-5"></div>
+                <h2 class="text-center font-weight-bold">PORTFOLIO</h2>
+                <p class="text-center col-7 col-sm-6 col-md-4 col-lg-3 mb-4">These are some of the projects I've built 100% remotely</p>
+                <div class="row mx-3">
+                   <div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('1')">
+                              <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">Exercise Tracker API</h3>
+                                <p class="pt-1 pl-2 mx-4">ROR API that measures workouts of login users and allows admin users create new exercises.</p>
+                              </div>    
+                              <div class="rounded-circle d-show"></div>
+                            </a>   
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>
+                    <div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('2')">
+                                <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                    <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">WORKAGRAM!</h3>
+                                    <p class="pt-1 pl-2 mx-4">Twitter inspired RoR app where users follow each other and post pictures of their work life</p>
+                                </div>    
+                                <div class="rounded-circle d-show"></div>
+                            </a>     
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>
+					<div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('3')">
+                            <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">Stay In Touch</h3>
+                                <p class="pt-1 pl-2 mx-4">Facebook inspired ROR app where users can send, accept and reject friend requests and it's possible to login with your own Facebook account</p>
+                            </div> 
+                            <div class="rounded-circle d-show"></div>    
+                            </a>      
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>
+                    <div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('4')">
+                              <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">ROR Blogger</h3>
+                                <p class="pt-1 pl-2 mx-4">Blogger 2 tutorial from jumpstartlab.com I made using Ruby on Rails and the Paperclip Gem for image uploading</p>
+                              </div>    
+                              <div class="rounded-circle d-show"></div>  
+                            </a>     
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>  
+                    <div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('5')">
+                              <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                  <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">Tic Tac Toe</h3>
+                                  <p class="pt-1 pl-2 mx-4">The famous two player Tic Tac Toe game made in Ruby played directly from a console or terminal</p>
+                              </div> 
+                              <div class="rounded-circle d-show"></div>
+                            </a>      
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>
+                    <div class="rounded-circle col-12 col-lg-6 col-xl-4 px-2 px-md-4">
+                        <article class="">
+                            <a href="" data-toggle="modal" data-target="#exampleModalCenter" onclick="changePic('6')">
+                              <div class="rounded-circle pt-5 px-5 px-md-4 d-hid">
+                                <h3 class="font-weight-bold bg-transparent pt-5 pt-lg-3 pl-2 mx-4">My own Framework</h3>
+                                <p class="pt-1 pl-2 mx-4">Created a responsive clone for the ionos.com page using my own Bootstrap inspired CSS framework</p>
+                              </div>    
+                              <div class="rounded-circle d-show"></div>  
+                            </a>     
+                        </article>
+                        <div class="o-separator my-4"></div>
+                    </div>					
+                </div>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" >
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">Exercise Tracker API</h1>
+                                </div>
+                                <img class="d-block w-100" src="img/tracker-api-mockup.jpg" alt="Tracker API slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        ROR API that measures workouts of login users and allows admin users create new exercises.
+                                    </p>
+									<p>
+									    <a target="_blank" href="https://github.com/euqueme/tracker-api"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://extracker-api.herokuapp.com/api_docs/" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>
+								    </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item active">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">WORKAGRAM!</h1>
+                                </div>
+                                <img class="d-block w-100" src="img/workagram-mockup.jpg" alt="WORKAGRAM slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        Twitter inspired RoR app where workers follow each other and post pictures of their work life
+                                    </p>
+									<p>
+									    <a target="_blank" href="https://github.com/euqueme/workagram"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://maru-workagram.herokuapp.com/" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>
+									</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">Stay In Touch</h1>
+                                </div>
+                                <img class="d-block w-100 mx-auto" src="img/stay-in-touch-mockup.jpg" alt="Stay In Touch slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        Facebook inspired ROR app where users can send, accept and reject friend requests and it's possible to login with your own Facebook account
+                                    </p>
+									<p>
+                                        <a target="_blank" href="https://github.com/euqueme/ror-social-scaffold"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://audmaru-stay-in-touch.herokuapp.com/" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>
+									</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">ROR Blogger</h1>
+                                </div>
+                                <img class="d-block w-100" src="img/blogger2-mockup.jpg" alt="ROR Blogger slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        Blogger 2 tutorial from jumpstartlab.com I made using Ruby on Rails and the Paperclip Gem for image uploading 
+                                    </p>
+									<p>
+                                        <a target="_blank" href="https://github.com/euqueme/Blogger-Rails"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://maru-blogger2-jumpstarlab.herokuapp.com/" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>
+									</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">Tic Tac Toe</h1>
+                                </div>
+                                <img class="d-block w-100" src="img/tic-tac-toe-ruby-mockup.jpg" alt="Tic Tac Toe slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        The famous two player Tic Tac Toe game made in Ruby played directly from a console or terminal
+                                    </p>
+									<p>
+                                        <a target="_blank" href="https://github.com/euqueme/tic-tac-toe"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://tic-tac-toe.mariaeugeniaeu2.repl.run/" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>
+									</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-header d-block">
+                                    <h1 class="my-2 font-weight-bold text-center text-white">My own Framework</h1>
+                                <img class="d-block w-100 mx-auto" src="img/framework-mockup.jpg" alt="My own Framework slide">
+                                <div class="carousel-caption d-block">
+                                    <p class="my-2 text-white text-center mx-auto font-weight-bold px-2 pb-2">
+                                        Created a responsive clone for the ionos.com page using my own Bootstrap inspired CSS framework
+                                    </p>
+									<p>
+                                        <a target="_blank" href="https://github.com/euqueme/framework-demo"  class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent">Source code</a>
+                                        <a target="_blank" href="https://euqueme.github.io/framework-demo" class="text-white border-white py-2 px-2 mx-auto my-5 bg-transparent ">Live demo</a>								
+									</p>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+              </div>
+           </div>
+        </main>
+        <footer class="row d-flex justify-content-center">
+            <section id="Contact" class="col-12 col-md-10 col-xl-9">
+                <div class="w-separator row mx-5"></div>
+                <h2 class="text-center font-weight-bold text-white">CONTACT ME!</h2>
+                <ul class="d-flex justify-content-center m-5 text-white">
+                    <li class="m-3"><a target="_blank" class="text-white p-3" aria-label="twitter account" data-toggle="tooltip" data-placement="top" title="Twitter account" href="https://twitter.com/MaruKK"></a></li>
+                    <li class="m-3"><a target="_blank" class="text-white p-3" aria-label="linkedin account" data-toggle="tooltip" data-placement="top" title="LinkedIn account" href="https://www.linkedin.com/in/maria-queme"></a></li>
+                    <li class="m-3"><a target="_blank" class="text-white p-3" aria-label="e-mail address" data-toggle="tooltip" data-placement="top" title="e-mail me" href="mailto:euqueme@gmail.com"></a></li>
+                    <li class="my-3 ml-3 mr-0"><a target="_blank" class="text-white p-3" aria-label="github account" data-toggle="tooltip" data-placement="top" title="GitHub account" href="https://github.com/euqueme"></a></li>
+                    <li class="m-3"><a target="_blank" class="text-white font-weight-bolder p-3" data-toggle="tooltip" data-placement="top" title="Find my articles on Medium" href="https://medium.com/@euqueme">M</a></li>
+                </ul>
+                <p class="col-8 col-sm-6 col-xl-4 text-center text-white mb-5">© 2020 by MARIA QUEME based on the One-pager portfolio by Wix.com</p>
+            </section>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script> 
+        function changePic(num) {
+          $(".carousel-indicators > li").removeClass("active");
+          $(".carousel-item").removeClass("active");
+
+          $(".carousel-indicators > li:nth-of-type("+num+")").addClass("active");
+          $(".carousel-item:nth-of-type("+num+")").addClass("active");
+        }
+        </script>    
+    </body>
+</html>
